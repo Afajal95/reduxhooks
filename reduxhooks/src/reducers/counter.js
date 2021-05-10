@@ -1,13 +1,20 @@
 import React from 'react'
 
-const Counter = (state = 1, action) => {
+const initialState = {
+    counter: 1
+}
+const Counter = (state = initialState, action) => {
     switch(action.type){
         case "INCREMENT":
-            return state + 1;
+            return {
+                counter: state.counter + 1
+            }
         case "DECREMENT":
-            return state - 1;
+            return {
+                counter: state.counter - 1
+            }
         default:
-            return state;
+            return state;   
     }
         
     

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 const setUser = (userObj) => {
     return {
@@ -13,8 +14,8 @@ const logOut = () => {
     }
 }
 
-export default {
+export default  {
     setUser, logOut
 }
 
-export default UserActions
+

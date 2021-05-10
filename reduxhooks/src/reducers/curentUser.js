@@ -1,6 +1,11 @@
 import React from 'react'
 
-const CurentUser = (state ={}, action) => {
+const initialState ={
+    user: "",
+    loggedIn: false
+}
+ 
+const CurentUser = (state = initialState, action) => {
     switch(action.type){
         case "SET_USER":
             return {
@@ -9,9 +14,9 @@ const CurentUser = (state ={}, action) => {
                 loggedIn: true
             }
         case "LOG_OUT":
-            return {
+            return {    
                 ...state,
-                user:{},
+                user:"",
                 loggedIn: false
             }
             default:
@@ -20,5 +25,4 @@ const CurentUser = (state ={}, action) => {
     }
     
 }
-
-export default CurentUser
+export default CurentUser;

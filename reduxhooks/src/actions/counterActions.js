@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Increment =() => {
+const increment =() => {
     return{
         type: "INCREMENT"
     } 
 }
 
-const Decrement = () => {
+const decrement = () => {
     return{
         type: "Decrement"
     }
@@ -18,4 +18,4 @@ export default{
 
 
 
-export default CounterActions
+

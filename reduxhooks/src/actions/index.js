@@ -12,4 +12,4 @@ const allActions =() => {
     
 }
 
-export default Index
+export default allActions
